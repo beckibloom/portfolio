@@ -1,7 +1,12 @@
 * {
     box-sizing: border-box;
     margin:0;
+}
 
+body {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom:75px;
+    font-size:18px;
 }
 
 /*Styles for navigation*/
@@ -11,6 +16,8 @@ nav {
     background:#021859;
     color: white;
     padding: 5px;
+    padding-left: 20px;
+    padding-right:20px;
     height:50px;
 }
 
@@ -34,35 +41,141 @@ li {
     display:inline-block;
 }
 
+h2 {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
 /*Styles for hero*/
 
-main header {
+.hero header {
+    width:100%;
+}
 
+.hero-text {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:500px;
+    padding-left:20px;
+}
+
+.hero-image {
+    width:100%;
+    position:relative;
+}
+
+.hero-bio {
+    position:absolute;
+    bottom:0;
+    margin:15px;
+}
+
+.hero-image:hover {
+    opacity:0.8;
+    z-index:-1;
+}
+
+.hero-photo {
+    width:100%;
+}
+
+h1 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 70px;
+    padding:0;
+    margin:0;
+}
+
+h3 {
+    font-size:30px;
+}
+
+.subtitle {
+    font-style:italic;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+button {
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#D9AB9A;
+    border-radius:5px;
+    border: none;
+    font-size: 20px;
+    width:200px;
 }
 
 /*Styles for projects section*/
 
 section header {
-
+    background-color:#03258C;
+    color:white;
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
 }
 
-section div {
-
+.projects {
+    position:relative;
 }
 
-figure {
-    
+section ul {
+    background-color:#021E73;
+    width:100%;
+    height:550px;
+    margin-top:0;
+    padding-top:15px;
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    overflow:hidden;
+}
+
+.project-sample {
+    margin:15px;
+    width: 278px;
+}
+
+.final {
+    background:darkgray;
+    width:278px;
+    height:492px;
+    display:flex;
+    align-items:center;
+    font-size:40px;
+    text-align:center;
+}
+
+button.next {
+    position:absolute;
+    right:0;
+    top:calc(50% - 75px);
+    height:150px;
+    width:55px;
+    padding:10px;
+}
+
+.next-arrow {
+    height:40px;
 }
 
 /*Styles for footer*/
 
 footer {
-    display:fixed;
+    position:fixed;
+    bottom:0;
     background:#052DA6;
     width:100%;
     padding:5px;
     color:white;
     height:75px;
+    padding-left:20px;
 }
 
 footer ul {
@@ -78,4 +191,21 @@ footer ul {
 
 .email {
     margin-right:20px;
+}
+
+@media only screen and (min-width:864px) {
+    .hero-text {
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    div.hero-image {
+        width:40%;
+    }
+    .hero-image {
+        height:initial;
+        width:100%;
+        object-fit:cover;
+    }
 }

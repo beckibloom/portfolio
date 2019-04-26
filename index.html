@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Nunito" rel="stylesheet">
 </head>
 <body>
     <nav role="navigation">
         <ul>
-            <li>BB</li>
+            <li><h2>BB</h2></li>
             <li>
                 <img src="hamburger-menu.png" alt="Menu" class="menu-icon">
             </li>
         </ul>
     </nav>
     <main role="main">
-        <header role="banner">
-            <h1>Hero</h1>
+        <header role="banner" class="hero">
+            <div class="hero-image">
+                <img src="Becki Blumer Portraits Headshots Chicago-3673-resized.jpg" alt="Becki Blumer headshot photograph" class="hero-photo">
+                <span class="hero-bio">I am a soon-to-be graduate of the Full Stack Flex bootcamp program with Thinkful, and I am so excited to be making this journey into the tech space. I love to create with HTML, CSS, JavaScript and jQuery, and my favorite part of the build is when the "puzzle pieces" line up to bring an idea to life. I hope one day to influence and implement technologies for education and for the performing arts. When I'm not coding, I sing with a couple of choirs in the city and also enjoy spending as much time as possible in the great outdoors.</span>
+            </div>
+            <div class="hero-text">
+                <h3>Hi! My name is</h2>
+                <h1>Becki Blumer.</h1>
+                <h3 class="subtitle">I'm a Chicago-based web developer.</h3>
+                <button>Learn more</button>
+            </div>
         </header>
 
         <section>
             <header>
-                Projects
+                <h2>Projects</h2>
             </header>
-            <div>
-                <figure>
-                    Projects image carousel goes here.
-                </figure>
+            <div class="projects">
+                <ul>
+                    <li>
+                        <img src="Taste of Chicago Question_1.jpg" alt="Taste of Chicago Quiz App Question Sample" class="project-sample">
+                    </li>
+                    <li>
+                        <div class="project-sample final">More projects coming soon!</div>
+                    </li>
+                </ul>
+                <button class="next">
+                    <img src="arrow-right.png" alt="Arrow right" class="next-arrow">
+                </button>
             </div>
         </section>
 
