@@ -80,8 +80,8 @@ a {
     position:absolute;
     margin:15px;
     top:0;
-    z-index:-1;
     font-size:20px;
+    z-index:-1;
 }
 
 .photo-fade:hover {
@@ -157,6 +157,9 @@ section header {
     top:0;
     padding-bottom:50px;
     opacity:0.8;
+}
+
+.project-sample:hover {
     z-index:-1;
 }
 
@@ -166,10 +169,6 @@ section header {
 
 .project-title {
     font-weight:bolder;
-}
-
-.project-sample:hover {
-    opacity:0.4;
 }
 
 button.project-button {
