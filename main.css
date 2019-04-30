@@ -49,6 +49,11 @@ h2 {
     display:none;
 }
 
+a {
+   color:white;
+   text-decoration:none; 
+}
+
 /*Styles for hero*/
 
 .hero {
@@ -216,14 +221,10 @@ footer ul {
 }
 
 .footer-icon {
-    width: 40px;
+    width: 35px;
     -webkit-filter:invert(1);
     filter:invert(1);
-    margin-right:10px;
-}
-
-.email {
-    margin-right:20px;
+    margin-right:8px;
 }
 
 /* Optimizing for horizontal mobile */
@@ -249,6 +250,10 @@ footer ul {
 
 /* Optimizing for tablet and wider */
 @media only screen and (min-width:700px) {
+    nav {
+        padding:10px;
+    }
+
     .menu-icon {
         display:none;
     }
@@ -273,7 +278,7 @@ footer ul {
         font-size:25px;
     }
     
-    /* .subtitle {
-        margin-bottom:100px;
-    } */
+    .hero-image {
+        max-width:525px;
+    }
 }
