@@ -45,6 +45,10 @@ h2 {
     font-family: 'Averia Serif Libre', cursive;
 }
 
+.nav-link {
+    display:none;
+}
+
 /*Styles for hero*/
 
 .hero {
@@ -72,6 +76,7 @@ h2 {
     margin:15px;
     top:0;
     z-index:-1;
+    font-size:20px;
 }
 
 .photo-fade:hover {
@@ -159,9 +164,7 @@ section header {
 }
 
 .project-sample:hover {
-    background-color:white;
     opacity:0.4;
-    z-index:-1;
 }
 
 button.project-button {
@@ -223,76 +226,54 @@ footer ul {
     margin-right:20px;
 }
 
+/* Optimizing for horizontal mobile */
 @media only screen and (max-height:400px) {
     .hero {
-        width:100%;
         display:flex;
-
     }
     
     .hero-text {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
         height:453px;
         padding-left:20px;
         width:75%;
     }
-    
-    .photo-fade, .hero-image {
-        position:relative;
-        right:0;
-        padding:0;
-        margin:0;
-        border:none;
-    }
-    
+
     .image-text {
-        position:absolute;
-        margin:15px;
-        top:0;
-        z-index:-1;
-    }
-    
-    .photo-fade:hover {
-        background-color:white;
-        opacity:0.4;
-        z-index:-1;
-    }
-    
-    h1 {
-        font-family: 'Averia Serif Libre', cursive;
-        font-size: 70px;
-        padding:0;
-        margin:0;
-    }
-    
-    h3 {
-        font-size:30px;
+        font-size:18px;
     }
     
     .subtitle {
-        font-style:italic;
-        margin-top:20px;
         margin-bottom:50px;
     }
-    
-    button {
+}
+
+/* Optimizing for tablet and wider */
+@media only screen and (min-width:700px) {
+    .menu-icon {
+        display:none;
+    }
+
+    .nav-link {
+        display:inline;
         padding-left:20px;
-        padding-right:20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color:#D9AB9A;
-        border-radius:5px;
-        border: none;
-        font-size: 20px;
-        width:200px;
+    }
+
+    .hero {
+        display:flex;
     }
     
-}
+    .hero-text {
+        padding-left:20px;
+        width:75%;
+        display:flex;
+        justify-content:center;
+    }
 
-@media only screen and (min-width:864px) {
-}
-
-@media only screen and (min-width:1000px) {
+    .image-text {
+        font-size:25px;
+    }
+    
+    /* .subtitle {
+        margin-bottom:100px;
+    } */
 }
