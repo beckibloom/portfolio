@@ -286,6 +286,40 @@ footer ul {
     margin-right:8px;
 }
 
+@-webkit-keyframes yellow-fade {
+    from {
+      background: #fff;
+    }
+    to {
+      background: #052DA6;
+    }
+}
+
+@-moz-keyframes yellow-fade {
+    from {
+        background: #fff;
+      }
+      to {
+        background: #052DA6;
+      }
+}
+
+@keyframes yellow-fade {
+    from {
+      background: #fff;
+    }
+    to {
+      background: #052DA6;
+    }
+}
+
+.animate {
+    -webkit-animation:yellow-fade 1s ease-in-out 0s;
+    -moz-animation:yellow-fade 1s ease-in-out 0s;
+    -o-animation:yellow-fade 1s ease-in-out 0s;
+    animation:yellow-fade 1s ease-in-out 0s;
+}
+
 /* Optimizing for horizontal mobile */
 @media only screen and (max-height:400px) {
     .hero {
