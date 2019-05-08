@@ -23,18 +23,18 @@ $(document).click(function(event) {
     }
 })
 
-function contactAnimation() {
-    let element = document.getElementByClass("footer");
-    element.addEventListener("click", function(e) {
-        e.preventDefault;
-        element.classList.remove("animate");
-        void element.offsetWidth;
-        element.classList.add("animate");
-    }, false);
-    })
-}
+// function contactAnimation() {
+//     let element = document.getElementByClass("footer");
+//     element.addEventListener("click", function(e) {
+//         e.preventDefault;
+//         element.classList.remove("animate");
+//         void element.offsetWidth;
+//         element.classList.add("animate");
+//     }, false);
+    
+// }
 
-contactAnimation();
+// contactAnimation();
 
 // $('.js-contact').click(function(event) {
 //      $('.footer').css("-webkit-animation", "yellow-fade 1s ease-in-out 0s");
