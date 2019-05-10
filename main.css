@@ -71,10 +71,17 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height:40px;
 }
 
 li {
-    display:inline-block;
+    display:flex;
+    align-items:center;
+    height:40px;
+}
+
+div.dropdown {
+    display:flex;
 }
 
 h2 {
@@ -277,6 +284,10 @@ footer {
 
 footer ul {
     height:60px;
+}
+
+.icon-menu {
+    display:inline-block;
 }
 
 .footer-icon {
