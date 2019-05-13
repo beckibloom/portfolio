@@ -129,14 +129,14 @@ a.bio {
     position:absolute;
     margin:15px;
     top:0;
-    font-size:16px;
-    line-height:24px;
+    font-size:18px;
+    line-height:28px;
 }
 
 
 .faded {
     background-color:white;
-    opacity:0.4;
+    opacity:0.1;
 }
 
 h1 {
@@ -203,7 +203,7 @@ section header {
     background:white;
     width:590px;
     min-height:290px;
-    max-height:590px;
+    max-height:700px;
     padding-top:15px;
     padding-left:15px;
     padding-right:15px;
