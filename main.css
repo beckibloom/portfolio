@@ -10,8 +10,6 @@ body {
     line-height:24px;
 }
 
-/*Styles for navigation*/
-
 nav {
     width:100%;
     background:#021859;
@@ -70,53 +68,30 @@ a {
    text-decoration:none; 
 }
 
-/*Styles for hero*/
-
-.hero {
-    width:100%;
-}
-
 .hero-text {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    height:500px;
+    align-items:center;
+    height:450px;
     padding-left:20px;
+    width:90%;
+    text-align:center;
 }
 
-a.bio {
-    color:black;
-    text-align:center;
+.bio {
+    padding: 30px;
 }
 
 .hero-image {
     width:90%;
-    margin:10px;
-    padding:0;
-    text-align:center;
-    position:relative;
-}
-
-.photo-fade {
-    width:100%;
     border-radius:100px;
-    z-index:-1;
-    border:4px solid #444;
-    position:absolute;
-    top:0;
-}
-
-.image-text {
-    font-size:18px;
-    line-height:28px;
-    position:absolute;
-    top:0;
-}
-
-
-.faded {
-    background-color:white;
-    opacity:0.1;
+    border: 3px solid gray;
+    max-width:525px;
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:20px;
 }
 
 h1 {
@@ -150,16 +125,12 @@ button {
     line-height:26px;
     width:200px;
     cursor:pointer;
+    color:white;
+    font-family: 'Nunito', sans-serif;
 }
-
-.hidden {
-    display:none;
-}
-
-/*Styles for projects section*/
 
 section header {
-    background-color:#03258C;
+    background-color:#444;
     color:white;
     height:50px;
     width:100%;
@@ -170,7 +141,7 @@ section header {
 
 .projects {
     position:relative;
-    background-color:#021E73;
+    background-color:#aaa;
     width:100%;
     margin-top:0;
     display:flex;
@@ -183,9 +154,7 @@ section header {
     background:white;
     width:590px;
     min-height:290px;
-    padding-top:15px;
-    padding-left:15px;
-    padding-right:15px;
+    padding:15px;
     margin:30px;
     display:relative;
 }
@@ -222,32 +191,19 @@ button.project-button {
     margin-right:2px;
 }
 
+.technologies {
+    font-weight:bold;
+}
+
 .final {
     background:#021859;
     color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     font-size:32px;
-    line-height: 48px;
     padding:10px;
-    height:200px;
+    padding-top:110px;
+    height:260px;
+    text-align:center;
 }
-
-button.next {
-    position:absolute;
-    right:0;
-    top:calc(50% - 75px);
-    height:150px;
-    width:55px;
-    padding:10px;
-}
-
-.next-arrow {
-    height:40px;
-}
-
-/*Styles for footer*/
 
 footer {
     bottom:0;
@@ -275,59 +231,27 @@ footer ul {
     margin-right:8px;
 }
 
-@-webkit-keyframes yellow-fade {
-    from {
-      background: #fff;
-    }
-    to {
-      background: #052DA6;
-    }
-}
-
-@-moz-keyframes yellow-fade {
-    from {
-        background: #fff;
-      }
-      to {
-        background: #052DA6;
-      }
-}
-
-@keyframes yellow-fade {
-    from {
-      background: #fff;
-    }
-    to {
-      background: #052DA6;
-    }
-}
-
-.animate {
-    -webkit-animation:yellow-fade 1s ease-in-out 0s;
-    -moz-animation:yellow-fade 1s ease-in-out 0s;
-    -o-animation:yellow-fade 1s ease-in-out 0s;
-    animation:yellow-fade 1s ease-in-out 0s;
-}
-
 /* Optimizing for horizontal mobile */
 @media only screen and (max-height:400px) {
     .hero {
         display:flex;
+        align-items:center;
     }
     
     .hero-text {
         height:453px;
         padding-left:20px;
-        width:75%;
-    }
-
-    .image-text {
-        font-size:18px;
-        line-height:24px;
+        width:50%;
     }
     
     .subtitle {
         margin-bottom:50px;
+    }
+
+    .hero-image {
+        margin:20px;
+        width:50%;
+        height:auto;
     }
 }
 
@@ -335,6 +259,10 @@ footer ul {
 @media only screen and (min-width:700px) {
     nav {
         padding:10px;
+    }
+
+    button.dropbtn {
+        display:none;
     }
 
     .menu-icon {
@@ -348,22 +276,23 @@ footer ul {
 
     .hero {
         display:flex;
+        align-items:center;
     }
     
     .hero-text {
+        height:453px;
         padding-left:20px;
-        width:75%;
-        display:flex;
-        justify-content:center;
-    }
-
-    .image-text {
-        font-size:20px;
-        line-height:28px;
+        width:50%;
     }
     
+    .subtitle {
+        margin-bottom:50px;
+    }
+
     .hero-image {
-        max-width:525px;
+        margin:20px;
+        width:50%;
+        height:auto;
     }
 }
 
@@ -375,13 +304,11 @@ button.dropbtn {
     cursor:pointer;
 }
   
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
   
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: fixed;
@@ -393,26 +320,24 @@ button.dropbtn {
     z-index: 1;
 }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #555}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown-content a:hover {
+    background-color: #555
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
     background-color: rgb(45, 95, 245);
-  }
+}
 
 @media only screen and (max-width:700px) {
     .project-image {
