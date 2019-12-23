@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    margin-bottom:75px;
     font-size:18px;
     line-height:24px;
 }
@@ -20,6 +19,9 @@ nav {
     height:50px;
     font-size:16px;
     line-height:24px;
+    position:fixed;
+    top:0;
+    z-index:100;
 }
 
 .menu-icon {
@@ -77,6 +79,7 @@ a {
     padding-left:20px;
     width:90%;
     text-align:center;
+    margin-top:50px;
 }
 
 .bio {
@@ -213,7 +216,6 @@ footer {
     color:white;
     height:75px;
     padding-left:20px;
-    z-index:2;
 }
 
 footer ul {
@@ -317,7 +319,6 @@ button.dropbtn {
     top:44px;
     min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
   
 .dropdown-content a {
