@@ -129,10 +129,11 @@ h1 {
 h3 {
     font-size:30px;
     line-height: 40px;
+    font-weight:normal;
 }
 
 .subtitle {
-    font-style:italic;
+    color:gray;
     margin-top:30px;
     margin-bottom:50px;
 }
@@ -195,7 +196,13 @@ section header {
 }
 
 .project-title {
+    font-size:20px;
     font-weight:bolder;
+}
+
+.project-subtitle {
+    font-weight:bolder;
+    color: #03258C;
 }
 
 .project-buttons {
@@ -215,8 +222,8 @@ button.project-button {
     margin-right:2px;
 }
 
-.technologies {
-    font-weight:bold;
+.bold {
+    font-weight:bolder;
 }
 
 .final {
