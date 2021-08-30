@@ -1,0 +1,24 @@
+{
+  "name": "beckibloom.dev",
+  "version": "1.0.0",
+  "description": "Becki Blumer's software developer portfolio",
+  "main": "index.html",
+  "dependencies": {
+    "bufferutil": "^4.0.3",
+    "utf-8-validate": "^5.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beckibloom/portfolio.git"
+  },
+  "author": "Becki Blumer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beckibloom/portfolio/issues"
+  },
+  "homepage": "https://github.com/beckibloom/portfolio#readme"
+}
